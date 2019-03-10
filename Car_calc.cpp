@@ -33,9 +33,9 @@ ________  ________  ________          ________  ________  ___       ________  __
 
   perweeksch = wage * sch_hrs;
   perweeksum = wage * sum_hrs;
-  permonthsch = perweeksch * 4;
-  permonthsum = perweeksum * 4;
-  salary = (permonthsch * 10) + (permonthsum * 2);
+  permonthsch = perweeksch * 4.28571428571;
+  permonthsum = perweeksum * 4.28571428571;
+  salary = ((permonthsch * 10) + (permonthsum * 2))-(((permonthsum * 2) + (permonthsch * 10)*.25));
   total = salary * yrs;
 
 // Output
